@@ -27,13 +27,19 @@
             alert("Too bad, we didn't have time to make this, so you're a mage.")
             //game start
             var direction = prompt("You start in the town of Vandle. You are a lonely explorer with no life. Your goal is to make yourself a life of fame and fortune. To the East is the mines, to the South is the town, to the West is the river, and to the North is the sand-swept cliffs. Which direction do you go?")
-            
+            //places to go
                 if (direction == "North") {
                     alert("You walked off the cliffs and died. ")
                 }
             
                 if (direction == "West") {
                     alert("You waded into the water and was swept into the canyon. You died.")
+                }
+                if (direction == "South) {
+                    prompt("You walk into town, and find three possible places to visit. You can visit the Weapons Shop, the Armour Shop, or the Inn. Where do you choose to go?")
+                }
+                if (direction == "East") {
+                    prompt("You visit the mines. Inside are 2 passages, the the Left and the Right, which way do you travel?")
                 }
         </script>
     </body>
