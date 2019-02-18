@@ -16,28 +16,29 @@
             
             //character design
             alert("Welcome to Vandlebar, the greatest game of this century.");
-            var name = prompt("What will you name you character!");
+            var name = prompt("What will your name you character!");
                 if (name == "Chair") {
                     while(name == "Chair") {
                            alert("Choink");
                     }
                 }
-            alert("Hello, " + name + ", welcome to the world of Vandlebar!")
+            alert("Hello, " + name + ", welcome to the world of Vandlebar! Make sure to capitalize your choices!")
             prompt("What class will you choose")
             alert("Too bad, we didn't have time to make this, so you're a mage.")
             //game start
             var direction = prompt("You start in the town of Vandle. You are a lonely explorer with no life. Your goal is to make yourself a life of fame and fortune. To the East is the mines, to the South is the town, to the West is the river, and to the North is the sand-swept cliffs. Which direction do you go?")
-            //places to go
+            
                 if (direction == "North") {
                     alert("You walked off the cliffs and died. ")
+                    Windows.stop
                 }
             
                 if (direction == "West") {
                     alert("You waded into the water and was swept into the canyon. You died.")
+                    Windows.stop
                 }
-            
                 if (direction == "South") {
-                    prompt("You walk into town, and find three possible places to visit. You can visit the Weapons Shop, the Armour Shop, or the Inn. Where do you choose to go?")
+                    prompt("You walk into town, and find three possible places to visit. You can visit the Weapons Shop, the Armour Shop,  or the SunlitTavern. Where do you choose to go?")
                 }
                 
                 if (direction == "East") {
@@ -45,13 +46,33 @@
                 }
             
             //Town
-            var Inn = prompt("You can visit the bar, or go upstairs. Do you go Upstairs, or to the Bar?")
-                if (Inn == "Upstairs") {
+            var SunlitTavern = prompt("You can visit the bar, or go upstairs. Do you go Upstairs, or to the Bar?")
+                if (SunlitTavern == "Upstairs") {
                     alert("You walk upstairs and are immediatly ambushed by 2 theifs. Before you can react one stabs you in the chest. You Die.")
+                    Windows.stop
                 }
-                if (Inn == "Bar") {
+                if (SunlitTavern == "Bar") {
                     prompt("You can order a drink or talk to the stranger sitting next to you. Do you Order, or Talk?")
                 }
+            //Inn  
+            var Talk = prompt("The Man refuses to answer. You ask him again, then realize he has died. Do you Order a drink or Leave?");
+                if (Talk == Order) {
+                    alert("You order a Sherley Temple. As you take a long swig you realize something is not quite right about it's taste. You see the bar tender look at you gleefully. As you begin to black out, you realize it has been poisoned. You Died.")
+                    window.stop
+                }
+                if (Talk == Leave) {
+                    prompt("You leave the Inn, noticing the bartender is looking slightly disapointed. Do you visit the Weapons Shop, Armour Shop, or Leave Vandle.")
+                }
+            var Order = prompt("The bartender slids you a Shirley Temple. Do you drink it, Yes or No?")
+                if (Order == Yes) {
+                    ("As you take a long swig you realize something is not quite right about it's taste. You see the bar tender look at you gleefully. As you begin to black out, you realize it has been poisoned. You Died.")
+                    Windows.stop
+                }
+                if (Order == No) {
+                    ("You take a long look at it and notice that green puffs of smoke are coming from it. YOu grab the drink and throw it on the bartender. You then storm out of the Inn.")
+                }
+            
+            var Leave = prompt("You leave the Inn, noticing the bartender is looking slightly disapointed. Do you visit the Weapons Shop, Armour Shop, or Leave Vandle.");
         </script>
     </body>
 </html>
